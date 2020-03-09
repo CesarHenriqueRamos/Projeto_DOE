@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Doe Sangue</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="img/logo.png" alt=" imagem de DOE"></div>
+        </div>        
+    </header>
+    <main>
+        <section class="conteudo">
+            <div class="container">
+                <h3>Sua Doação Importa</h3>
+                <p>Até 3 Vida com 1 Doação</p>
+                <p>Mais de 38.000 Doações são Necessárias Todos os Dias</p>
+                <p>Apenas 1,9% da População Brasileira Doa Sangue</p>
+                <button type="submit">Quero Ajudar</button>
+            </div>
+        </section>
+        <section class="form hide">
+            <div class="container">
+                <div class="w50"><h2>Entre Na Lista de Doadores</h2></div>
+                <div class="w50">
+                    <form action="/" method="post">
+                        <input type="text" name="name" placeholder="Seu Nome">
+                        <input type="email" name="email" placeholder="Seu Email">
+                        <input type="text" name="blood" placeholder="Seu Tipo Sanguinio">
+                        <button type="submit">Quero Ajudar</button>
+                    </form>
+            </div>
+            <div class="clear"></div>
+            </div>
+        </section>
+        <section class="donors">
+            <div class="container">
+            <h2>O Ultimos Doadores</h2>
+           {% for donor in donors %}
+            <div class="donor">
+                <div class="blood"><p>{{donor.blood}}</p></div>
+                <p>{{donor.name}}</p>
+            </div>
+            
+       {% endfor%}
+            <div class="clear"></div>
+        </div>
+        </section>
+    </main>
+    <p class="center">Com Amor</p>
+    <footer>
+        Todos os direitos Reservados
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

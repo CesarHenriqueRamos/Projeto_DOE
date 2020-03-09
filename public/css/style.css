@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    background-color: #f9f9f9;
+}
+.container{
+    margin: 0;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 2%;
+}
+.logo{
+    width: 100%;
+    max-width: 100px;
+    margin: 20px auto;
+   
+}
+.logo img{
+    width: 100%;
+}
+/*section content*/
+section.conteudo{
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto 0 auto;
+   
+}
+section.conteudo h3{
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+}
+section.conteudo p{
+    padding: 15px ;
+    font-size: 18px;
+}
+section.conteudo button{
+    border: 0;
+    background-color: #FF4F4F;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 30%;
+    display: inline-block;
+    cursor: pointer;
+}
+/*form*/
+section.form{
+     max-width: 600px;
+    width: 100%;
+    height:220px;
+    background-color: #FF4F4F;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 300ms;
+}
+section.form.hide ,section.form.hide .w50{
+    opacity: 0;
+    height: 0;
+    margin-top: 0;
+    float: none;
+}
+section.form h2{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+form input{
+   width: 100%;
+   margin: 5px 0;
+   border-radius: 20px;
+   padding: 10px;
+   border: 0;
+}
+form button{
+    margin-top: 10px;
+    border: 0;
+    padding: 10px;
+    border-radius: 20px;
+    color: #FF4F4F;
+    cursor: pointer;
+}
+.w50{
+    float: left;
+    width: 50%;
+}
+.clear{
+    clear: both;
+}
+/*section donors*/
+section.donors{
+    width: 100%;
+    max-width: 600px;
+    margin:0 auto;
+   
+}
+section.donors h2{
+    text-align: center;
+    margin-top: 30px;
+}
+.donor{
+ color: white;
+ width: 100%;
+ max-width: 140px;
+ background-color: #FF4F4F;
+ border: #ccc;
+ box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.7);
+margin: 20px 10px;
+text-align: center;
+padding: 10px;
+ float: left;
+ border-radius: 10px;
+ position: relative;
+ height: 90px;
+}
+.donor p{
+    position: relative;
+    top: 50px;
+    left: 0;
+}
+/*faser a gotinha*/
+.blood{
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    transform: rotate(-45deg);
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    color: #FF4F4F;
+    top: 10px;
+    left: 50px;
+}
+.blood p{
+    transform: rotate(45deg);
+    position: relative;
+   top: 30%;
+   left: 0;
+}
+.center{
+    text-align: center;
+}
+/*footer*/
+footer{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #FF4F4F;
+    padding-top: 25px;
+    font-size: 20px;
+    color: white;
+}
+@media screen and (max-width:720px){
+    section.form{        
+       margin: 10px 2%;    
+       max-width: 96%;   
+   }
+   .w50{
+       width: 100%;       
+   }
+   section.form{
+       height: 240px;
+   }
+   section.form h2{
+    padding-top: 0px;
+    }
+    form button{
+        margin-bottom: 10px;
+        width: 100%;
+        cursor: pointer;
+    }
+}
